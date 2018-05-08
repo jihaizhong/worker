@@ -1,0 +1,26 @@
+2018-04-27 08:16:22 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in C:\xampp\htdocs\wokerchat\workerman\Protocols\Websocket.php:225
+Stack trace:
+#0 C:\xampp\htdocs\wokerchat\workerman\Connection\TcpConnection.php(313): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 C:\xampp\htdocs\wokerchat\test.php(41): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: handle_connection(Object(Workerman\Connection\TcpConnection))
+#3 C:\xampp\htdocs\wokerchat\workerman\Worker.php(904): call_user_func('handle_connecti...', Object(Workerman\Connection\TcpConnection))
+#4 [internal function]: Workerman\Worker->acceptConnection(Resource id #15)
+#5 C:\xampp\htdocs\wokerchat\workerman\Events\Select.php(286): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\wokerchat\workerman\Worker.php(856): Workerman\Events\Select->loop()
+#7 C:\xampp\htdocs\wokerchat\workerman\Worker.php(473): Workerman\Worker->run()
+#8 C:\xampp\htdocs\wokerchat\workerman\Worker.php(382): Workerman\Worker::runAllWorkers()
+#9 C:\xampp\htdocs\wokerchat\test.php(72): Workerman\Worker::runAll()
+#10 {main}
+2018-04-27 08:24:23 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in C:\xampp\htdocs\wokerchat\workerman\Protocols\Websocket.php:225
+Stack trace:
+#0 C:\xampp\htdocs\wokerchat\workerman\Connection\TcpConnection.php(313): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 C:\xampp\htdocs\wokerchat\test.php(60): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: handle_message(Object(Workerman\Connection\TcpConnection), '{"type":"login"...')
+#3 C:\xampp\htdocs\wokerchat\workerman\Connection\TcpConnection.php(632): call_user_func('handle_message', Object(Workerman\Connection\TcpConnection), '{"type":"login"...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #17)
+#5 C:\xampp\htdocs\wokerchat\workerman\Events\Select.php(286): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\wokerchat\workerman\Worker.php(856): Workerman\Events\Select->loop()
+#7 C:\xampp\htdocs\wokerchat\workerman\Worker.php(473): Workerman\Worker->run()
+#8 C:\xampp\htdocs\wokerchat\workerman\Worker.php(382): Workerman\Worker::runAllWorkers()
+#9 C:\xampp\htdocs\wokerchat\test.php(79): Workerman\Worker::runAll()
+#10 {main}
